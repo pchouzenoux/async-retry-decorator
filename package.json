@@ -1,0 +1,28 @@
+{
+  "name": "async-retry-decorator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch src/**/*.ts --exec npx ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.2",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.10",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.2"
+  },
+  "dependencies": {
+    "@types/async-retry": "^1.4.0",
+    "async-retry": "^1.2.3"
+  }
+}

@@ -1,0 +1,18 @@
+#System Files
+.DS_Store
+
+_# Logs
+*.log
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+.env
+
+# Dependency directories
+node_modules/
