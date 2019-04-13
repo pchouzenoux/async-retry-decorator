@@ -16,3 +16,4 @@ _# Logs
 
 # Dependency directories
 node_modules/
+lib/
