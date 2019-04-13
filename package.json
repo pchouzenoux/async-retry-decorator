@@ -2,7 +2,8 @@
   "name": "async-retry-decorator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/retry.js",
+  "types": "dist/retry.d.ts",
   "scripts": {
     "start": "npm run build:live",
     "build": "tsc -p ./tsconfig.build.json",
