@@ -6,9 +6,9 @@
   "types": "dist/retry.d.ts",
   "scripts": {
     "start": "npm run build:live",
-    "build": "tsc -p ./tsconfig.build.json",
+    "build": "tsc -p .",
     "build:live": "nodemon --watch src/**/*.ts --exec npx ts-node src/index.ts",
-    "test": "jest",
+    "test": "jest --coverage --colors",
     "test:watch": "jest --watchAll"
   },
   "keywords": [],
