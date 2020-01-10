@@ -1,0 +1,15 @@
+.env
+.editorconfig
+.eslintrc.js
+.gitignore
+.nvmrc
+.prettierrc
+.travis.yml
+jest.config.js
+tsconfig.json
+tsconfig.build.json
+yarn.lock
+
+src/
+coverage/
+test/

@@ -16,6 +16,6 @@ _# Logs
 
 # Dependency directories
 node_modules/
-dist/
+lib/
 
 coverage/

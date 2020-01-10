@@ -2,24 +2,24 @@ import retry from './Retry';
 
 describe('retry decorator test suite', () => {
   class TestImpl {
-    public count: number = 0;
+    public count = 0;
 
     @retry()
-    async default() {
+    async default(): Promise<string> {
       return 'hello world !';
     }
 
     @retry({ retries: 2, factor: 0.1 })
-    async hello() {
+    async hello(): Promise<string> {
       if (this.count < 2) {
-        this.count++;
+        this.count += 1;
         throw Error('Error: hello');
       }
       return 'hello world !';
     }
 
     @retry({ retries: 2, factor: 0.1 })
-    async helloError() {
+    async helloError(): Promise<any> {
       throw Error('Error: helloError');
     }
   }
