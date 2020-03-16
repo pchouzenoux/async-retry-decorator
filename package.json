@@ -2,12 +2,12 @@
   "name": "async-retry-decorator",
   "version": "1.2.0",
   "description": "Typescript decorator to use the library async-retry",
-  "main": "lib/retry.js",
-  "types": "lib/retry.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "npm run build:live",
     "build": "rm -rf lib/ && tsc -p tsconfig.build.json",
-    "lint": "eslint —-ext .ts,.js .",
+    "lint": "eslint --ext .ts,.js .",
     "test": "jest --coverage --colors",
     "prepare": "yarn build"
   },
