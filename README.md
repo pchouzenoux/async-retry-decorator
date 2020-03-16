@@ -12,6 +12,8 @@ $ npm install --save async-retry-decorator
 # Example
 
 ```typescript
+  import { retry } from 'async-retry-decorator';
+
   class Clazz {
     @retry({
       retries: 5,
