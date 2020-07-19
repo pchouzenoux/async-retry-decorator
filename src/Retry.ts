@@ -4,6 +4,7 @@ export { Options as RetryOptions } from 'async-retry';
 
 export function retry(options?: RetryOptions) {
   return (
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     target: any,
     propertyKey: string,
     descriptor: TypedPropertyDescriptor<(...args: any[]) => Promise<any>>,
@@ -17,7 +18,7 @@ export function retry(options?: RetryOptions) {
     descriptor.value = function wrapper(...args: any[]): any {
       return asyncRetry(async () => {
         return method.apply(this, args);
-      }, options || {}).then(result => {
+      }, options || {}).then((result) => {
         return result;
       });
     };
