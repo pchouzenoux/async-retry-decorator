@@ -1,6 +1,6 @@
 {
   "name": "async-retry-decorator",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Typescript decorator to use the library async-retry",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
