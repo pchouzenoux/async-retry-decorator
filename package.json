@@ -1,6 +1,6 @@
 {
   "name": "async-retry-decorator",
-  "version": "1.10.1",
+  "version": "1.10.1-RC1",
   "description": "Typescript decorator to use the library async-retry",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
     "build": "rm -rf lib/ && tsc -p tsconfig.build.json",
     "lint": "eslint --ext .ts,.js .",
     "test": "jest --coverage --colors",
-    "prepare": "yarn build && husky install"
+    "prepare": "echo PREPARE START && yarn lint && yarn build && husky install && echo PREPARE END"
   },
   "homepage": "https://github.com/Nehorim/async-retry-decorator",
   "keywords": [
